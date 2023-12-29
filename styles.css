@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #3498db;
+  padding: 15px;
+}
+
+#lp {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2980b9;
+}
+
+nav a.active {
+  color: #2ecc71;
+}
+
+#hero {
+  text-align: center;
+}
+
+#avatar {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+#avatar-container {
+  padding-top: 12px;
+  position: relative;
+  animation: floatAnimation 3s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+section h3 {
+  text-align: center;
+}
+
+.container img {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  display: block;
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.category a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.category h4 {
+  text-align: center;
+}
+
+.logo-list {
+  display: flex;
+  justify-content: center;
+}
+
+#message {
+  padding: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #2980b9;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #333333;
+  color: #f0f0f0;
+}
+
+#send-btn {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#send-btn:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}

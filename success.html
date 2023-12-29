@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message me - Success</title>
+  <style>
+    section {
+      text-align: center;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="#4CAF50">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+    </svg>
+
+    <h3>Message sent successfully!</h3>
+    <p>Thank you! I will reply to you soon!
+    </p>
+    <p>Redirecting back to the main page.....</p>
+    <!-- Option for manual back -->
+    <button onclick="goBackManually()">Go Back Now</button>
+  </section>
+
+  <script>
+    setTimeout(function () {
+      window.location.href = "/";
+    }, 3000);
+
+    // Function for manual back
+    function goBackManually() {
+      window.location.href = "/";
+    }
+  </script>
+
+</body>
+
+</html>

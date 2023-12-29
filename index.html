@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Passionate web developer showcasing skills and projects in creating engaging digital experiences.">
+  <meta name="author" content="Lakhindar Pal">
+  <meta name="keywords" content="web development, JavaScript, React, portfolio, projects">
+
+  <!-- Open Graph tags for social sharing -->
+  <meta property="og:title" content="Lakhindar Pal - Web Developer">
+  <meta property="og:description" content="Passionate web developer showcasing skills and projects in creating engaging digital experiences.">
+  <meta property="og:image" content="pics/avatar.jpg">
+  <meta property="og:url" content="https://lakhindar.is-a.dev">
+
+  <!-- Twitter Card tags for Twitter sharing -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@lakhindarpal">
+  <meta name="twitter:title" content="Lakhindar Pal - Web Developer">
+  <meta name="twitter:description" content="Passionate web developer showcasing skills and projects in creating engaging digital experiences.">
+  <meta name="twitter:image" content="pics/avatar.jpg">
+
+  <title>Lakhindar Pal - Web Developer</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- JavaScript -->
+  <script src="main.js" defer></script>
+  <!-- Web3Forms script -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <!-- Android Chrome Icons -->
+  <link rel="icon" sizes="192x192" href="/path/to/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="/path/to/android-chrome-512x512.png">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+
+  <!-- Favicon.ico -->
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" sizes="48x48" href="icons/favicon-48x48.png">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#3498db">
+  <!-- Content Language -->
+  <meta http-equiv="Content-Language" content="en">
+
+  <!-- PWA setup -->
+  <link rel="manifest" href="pwa/manifest.json">
+  <script>
+    if (location.protocol == "http:") location.protocol = "https:";
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("pwa/sw.js")
+        .then((reg) => console.log("Service Worker registered", reg))
+        .catch((err) =>
+          console.error("Service Worker **not** registered", err)
+        );
+    } else {
+      console.warn("Service Worker not supported in this browser");
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav id="links-list">
+      <a href="/">
+        <img src="pics/avatar.jpg" id="lp" alt="LP">
+      </a>
+      <a href="#about">About</a>
+      <a href="#backpack">Backpack</a>
+      <a href="#connect">Connect</a>
+      <a href="#message">Message</a>
+      <a href="javascript:void(0);" id="sun-moon-icon">☀︎</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <div id="hero">
+      <div id="avatar-container">
+        <img src="pics/avatar.jpg" id="avatar" alt="Avatar">
+      </div>
+      <div>
+        <h1>Lakhindar Pal</h1>
+        <p>A noob web wizard hailing from India 🇮🇳.</p>
+      </div>
+    </div>
+
+    <section id="about">
+      <h3>What defines me</h3>
+      <ul>
+        <li>I'm deeply enamored with the world of open source.</li>
+        <li>Embracing the shadows, I'm a fervent dark mode enthusiast.</li>
+        <li>Enjoys exploring music in different languages even if I don't understand the language.</li>
+        <li>Always eager to learn and collaborate on interesting projects.</li>
+        <li>Enjoys watching movies from various genres to relax and unwind.</li>
+        <li>From epic adventures to stirring tales of anime is my go-to source for creativity and inspiration.</li>
+      </ul>
+    </section>
+    <hr>
+    <!-- Skills section -->
+    <section id="backpack">
+      <h3>What's in my backpack</h3>
+      <div class="container">
+        <div class="category">
+          <h4>Programing languages</h4>
+          <div class="logo-list">
+            <img src="logos/html5-original.svg" alt="HTML5">
+            <img src="logos/css3-original.svg" alt="CSS3">
+            <img src="logos/javascript-original.svg" alt="JavaScript">
+            <img src="logos/typescript-original.svg" alt="TypeScript">
+            <img src="logos/python-original.svg" alt="Python">
+            <img src="logos/c-original.svg" alt="C-Lang">
+            <img src="logos/kotlin-original.svg" alt="Kotlin">
+          </div>
+        </div>
+        <div class="category">
+          <h4>Code editors</h4>
+          <div class="logo-list">
+            <img src="logos/vscode-original.svg" alt="VS Code">
+          </div>
+        </div>
+        <div class="category">
+          <h4>Front-end framework</h4>
+          <div class="logo-list">
+            <img src="logos/react-original.svg" alt="React">
+            <img src="logos/nextjs-original.svg" alt="Next.js">
+            <img src="logos/bootstrap-original.svg" alt="Bootstrap">
+            <img src="logos/tailwindcss-plain.svg" alt="Tailwind CSS">
+          </div>
+        </div>
+        <div class="category">
+          <h4>Back-end framework</h4>
+          <div class="logo-list">
+            <img src="logos/nodejs-original.svg" alt="Node.js">
+            <img src="logos/npm-original-wordmark.svg" alt="NPM">
+            <img src="logos/express-original.svg" alt="Express.js">
+            <img src="logos/discordjs-original.svg" alt="Discord.js">
+          </div>
+        </div>
+        <div class="category">
+          <h4>Database</h4>
+          <div class="logo-list">
+            <img src="logos/mongodb-original.svg" alt="MongoDB">
+            <img src="logos/mysql-original.svg" alt="MySQL">
+          </div>
+        </div>
+        <div class="category">
+          <h4>Version control</h4>
+          <div class="logo-list">
+            <img src="logos/git-original.svg" alt="Git">
+            <img src="logos/github-original.svg" alt="GitHub">
+            <img src="logos/gitlab-original.svg" alt="GitLab">
+            <img src="logos/bitbucket-original.svg" alt="Bitbucket">
+            <img src="/logos/Glitch_company.svg" alt="Glitch">
+            <img src="logos/New_Replit_Logo.svg" alt="Replit">
+          </div>
+        </div>
+        <div class="category">
+          <h4>Hosting services</h4>
+          <div class="logo-list">
+            <img src="logos/heroku-original.svg" alt="Heroku">
+            <img src="logos/railway-logo-dark.svg" alt="Railway">
+            <img src="logos/vercel-icon-dark.png" alt="Vercel">
+            <img src="logos/netlify-svgrepo-com.svg" alt="Netlify">
+          </div>
+        </div>
+        <div class="category">
+          <h4>Operating systems</h4>
+          <div class="logo-list">
+            <img src="logos/windows8-original.svg" alt="Windows">
+            <img src="logos/linux-original.svg" alt="Linux">
+            <img src="logos/android-original.svg" alt="Android">
+          </div>
+        </div>
+        <div class="category">
+          <h4>Web browsers</h4>
+          <div class="logo-list"> <img src="logos/Edge_2019.svg" alt="Edge">
+            <img src="logos/firefox-original.svg" alt="Firefox">
+            <img src="logos/chrome-original.svg" alt="Chrome">
+            </a>
+          </div>
+        </div>
+        <div class="category">
+          <h4>Query Resolvers</h4>
+          <div class="logo-list">
+            <img src="logos/google-original.svg" alt="Google">
+            <img src="logos/ChatGPT.svg" alt="ChatGPT">
+            <img src="/logos/YouTube_2017.svg" alt="YouTube">
+            <img src="/logos/Stack_Overflow_icon.svg" alt="Stack Overflow">
+          </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Connect Section -->
+    <section id="connect">
+      <h3>Connect with me</h3>
+      <div class="container">
+        <div class="category">
+          <h4>Social media</h4>
+          <div class="logo-list">
+            <a href="https://facebook.com/" target="_blank" title="Facebook"><img src="/logos/Facebook_2021.svg" alt="Facebook"></a>
+            <a href="https://Instagram.com/" target="_blank" title="Instagram"><img src="logos/Instagram_2016.svg" alt="Instagram"></a>
+            <a href="https://twitter.com/" target="_blank" title="Twitter"><img src="logos/Twitter.svg" alt="Twitter"></a>
+            <a href="https://reddit.com/user/lakhindarpal" target="_blank" title="Reddit"><img src="logos/Reddit_Logo_Icon.svg" alt="Reddit"></a>
+            <a href="https://hachyderm.io/@lakhindarpal" target="_blank" title="Mastodon"><img src="/logos/Mastodon_logotype_(simple)_new_hue.svg" alt="Mastodon"></a>
+          </div>
+        </div>
+        <div class="category">
+          <h4>Professional</h4>
+          <div class="logo-list">
+            <a href="https://linkedin.com/in/lakhindarpal" target="_blank" title="LinkedIn"><img src="logos/LinkedIn_icon.svg" alt="LinkedIn"></a>
+            <a href="mailto:dev.lakhindarpal+github@gmail.com" target="_blank" title="E-mail"><img src="logos/Circle-icons-email.svg" alt="E-mail"></a>
+          </div>
+        </div>
+        <div class="category">
+          <h4>Streaming</h4>
+          <div class="logo-list">
+            <a href="https://discord.com/" target="_blank" title="Discord"><img src="/logos/discord_blurple_RGB.svg" alt="Discord"></a>
+            <a href="https://www.twitch.tv/lakhindarpal" target="_blank" title="Twitch"><img src="logos/twitch_purple.svg" alt="Twitch"></a>
+            <a href="https://youtube.com/" target="_blank" title="YouTube"><img height="25" src="/logos/YouTube_2017.svg" alt="YouTube"></a>
+          </div>
+        </div>
+        <div class="category">
+          <h4>Blogging</h4>
+          <div class="logo-list">
+            <a href="https://lakhindarpal.hashnode.dev/" target="_blank" title="Hashnode"><img src="logos/hashnode.png" alt="Hashnode"></a>
+            <a href="https://lakhindarpal.substack.com/" target="_blank" title="Substack"><img src="/logos/substack.png" alt="Substack"></a>
+            <a href="https://lakhindarpal.medium.com" target="_blank" title="Medium"><img src="/logos/Medium-Symbol-Black-RGB.svg" alt="Medium"></a>
+            <a href="https://dev.to/lakhindarpal" target="_blank" title="Dev"><img src="/logos/dev-badge.svg" alt="Dev"></a>
+          </div>
+        </div>
+        <div class="category">
+          <h4>Coding environment</h4>
+          <div class="logo-list">
+            <a href="https://github.com/lakhindarpal" target="_blank" title="GitHub"><img src="logos/github-original.svg" alt="Github"></a>
+            <a href="https://glitch.com/@lakhindarpal" target="_blank" title="Glitch"><img src="/logos/Glitch_company.svg" alt="Glitch"></a>
+            <a href="https://gitlab.com/lakhindarpal" target="_blank" title="GitLab"><img src="logos/gitlab-original.svg" alt="Gitlab"></a>
+            <a href="https://replit.com/@lakhindarpal" target="_blank" title="Replit"><img src="logos/New_Replit_Logo.svg" alt="Replit"></a>
+          </div>
+        </div>
+        <div class="category">
+          <h4>Crowdfunding</h4>
+          <div class="logo-list">
+            <a href="https://ko-fi.com/lakhindarpal" target="_blank" title="Ko-fi"><img src="logos/ko-fi.png" alt="Ko-fi"></a>
+            <a href="https://patreon.com/lakhindarpal" target="_blank" title="Patreon"><img src="logos/Patreon_logo.svg" alt="Patreon"></a>
+            <a href="https://www.buymeacoffee.com/lakhindarpal" target="_blank" title="BuyMeACoffee"><img src="/logos/buy_me_a_coffee.svg" alt="BuyMeACoffe"></a>
+          </div>
+        </div>
+    </section>
+    <hr>
+    <section id="message">
+      <h3>Send me a message</h3>
+      <form action="https://api.web3forms.com/submit" method="POST" id="web3form">
+        <input type="hidden" name="access_key" value="14ac1ded-55db-42d2-acf6-f48b5a1593f9" />
+        <input type="hidden" name="from_name" value="New message from {name}" />
+        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="John Doe" required />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="you@company.com" required />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Message subject here" required />
+        </div>
+        <div>
+          <label for="message">Your Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Type your message here...." required></textarea>
+        </div>
+        <div>
+          <button type="submit" id="send-btn">
+            Send
+          </button>
+        </div>
+        <p id="result"></p>
+      </form>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <p>&copy; 2023 Lakhindar. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
