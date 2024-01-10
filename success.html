@@ -4,46 +4,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Message me - Success</title>
+  <meta name="author" content="Lakhindar Pal">
+
+  <title>Contact Lakhindar Pal- Success</title>
+  <meta name="robots" content="noindex, nofollow">
   <style>
-    section {
-      text-align: center;
+    :root {
+      --color-background: #f8f8f8;
+      --theme-primary: #1e5799;
+      --theme-secondary: #2989d8;
+      --color-distinct: #fff;
+      --color-text: #333;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: #1a1a1a;
+        --theme-primary: #0c324c;
+        --theme-secondary: #165b8c;
+        --color-distinct: #fff;
+        --color-text: #ddd;
+      }
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Ubuntu, Roboto, sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-text);
+    }
+
+    #success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    img {
+      width: 300px;
+      margin: 20px;
     }
 
     button {
-      background-color: #3498db;
-      color: #ffffff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
+      padding: 12px 20px;
+      background-color: var(--theme-secondary);
+      color: var(--color-distinct);
+      border: 1px solid var(--theme-primary);
       cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: var(--theme-primary);
+      border: 1px solid var(--theme-secondary);
     }
   </style>
 </head>
 
 <body>
-
-  <section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="#4CAF50">
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
-    </svg>
+  <div id="success">
+    <img src="https://i.giphy.com/YlSR3n9yZrxfgVzagm.webp" alt="Checkmark">
 
     <h3>Message sent successfully!</h3>
     <p>Thank you! I will reply to you soon!
     </p>
+
     <p>Redirecting back to the main page.....</p>
-    <!-- Option for manual back -->
-    <button onclick="goBackManually()">Go Back Now</button>
-  </section>
+    <button onclick="gobackManually()">Go Back Now</button>
+  </div>
 
   <script>
-    setTimeout(function () {
+    setTimeout(function() {
       window.location.href = "/";
     }, 3000);
 
     // Function for manual back
-    function goBackManually() {
+    function gobackManually() {
       window.location.href = "/";
     }
   </script>

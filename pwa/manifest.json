@@ -2,6 +2,7 @@
   "name": "Lakhindar Pal",
   "short_name": "LP",
   "description": "Portfolio of Lakhindar Pal",
+  "version": "2.0.0",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

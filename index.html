@@ -6,52 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Passionate web developer showcasing skills and projects in creating engaging digital experiences.">
   <meta name="author" content="Lakhindar Pal">
-  <meta name="keywords" content="web development, JavaScript, React, portfolio, projects">
 
-  <!-- Open Graph tags for social sharing -->
+  <!-- Open Graph tags -->
   <meta property="og:title" content="Lakhindar Pal - Web Developer">
   <meta property="og:description" content="Passionate web developer showcasing skills and projects in creating engaging digital experiences.">
-  <meta property="og:image" content="pics/avatar.jpg">
+  <meta property="og:image" content="icons/avatar-1200x630.png">
   <meta property="og:url" content="https://lakhindar.is-a.dev">
 
-  <!-- Twitter Card tags for Twitter sharing -->
+  <!-- Twitter Card tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@lakhindarpal">
   <meta name="twitter:title" content="Lakhindar Pal - Web Developer">
   <meta name="twitter:description" content="Passionate web developer showcasing skills and projects in creating engaging digital experiences.">
-  <meta name="twitter:image" content="pics/avatar.jpg">
+  <meta name="twitter:image" content="icons/avatar-1200x630.png">
 
   <title>Lakhindar Pal - Web Developer</title>
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
-  <!-- JavaScript -->
   <script src="main.js" defer></script>
-  <!-- Web3Forms script -->
   <script src="https://web3forms.com/client/script.js" async defer></script>
-
-  <!-- Android Chrome Icons -->
-  <link rel="icon" sizes="192x192" href="/path/to/android-chrome-192x192.png">
-  <link rel="icon" sizes="512x512" href="/path/to/android-chrome-512x512.png">
 
   <!-- Apple Touch Icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+
+  <!-- Android Chrome Icons -->
+  <link rel="icon" sizes="192x192" href="icons/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="icons/android-chrome-512x512.png">
 
   <!-- Favicon.ico -->
   <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-  <link rel="icon" type="image/x-icon" sizes="48x48" href="icons/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
 
-  <!-- Theme Color -->
+  <!-- Microsoft Tile Icons -->
+  <meta name="msapplication-TileImage" content="icons/mstile-70x70.png">
+  <meta name="msapplication-TileImage" content="icons/mstile-150x150.png">
+  <meta name="msapplication-TileImage" content="icons/mstile-310x310.png">
+  <meta name="msapplication-TileColor" content="#3498db">
+
+  <!-- Safari Pinned Tab Icon -->
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#3498db">
+
   <meta name="theme-color" content="#3498db">
-  <!-- Content Language -->
   <meta http-equiv="Content-Language" content="en">
 
-  <!-- PWA setup -->
   <link rel="manifest" href="pwa/manifest.json">
+  <meta name="msapplication-config" content="pwa/browserconfig.xml" />
+
   <script>
-    if (location.protocol == "http:") location.protocol = "https:";
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
         .register("pwa/sw.js")
@@ -66,228 +69,234 @@
 </head>
 
 <body>
-  <header>
-    <nav id="links-list">
-      <a href="/">
-        <img src="pics/avatar.jpg" id="lp" alt="LP">
-      </a>
-      <a href="#about">About</a>
-      <a href="#backpack">Backpack</a>
-      <a href="#connect">Connect</a>
-      <a href="#message">Message</a>
-      <a href="javascript:void(0);" id="sun-moon-icon">☀︎</a>
-    </nav>
-  </header>
-  <hr>
-  <main>
-    <div id="hero">
-      <div id="avatar-container">
-        <img src="pics/avatar.jpg" id="avatar" alt="Avatar">
-      </div>
-      <div>
-        <h1>Lakhindar Pal</h1>
-        <p>A noob web wizard hailing from India 🇮🇳.</p>
-      </div>
+  <div id="navbar">
+    <a href="#"><img src="icons/favicon-16x16.png" id="logo" alt="logo"></a>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <div id="mode-btn">
+      <a href="javascript:void(0);" id="sunMoonIcon">☀︎</a>
+      <a href="javascript:void(0);" id="hamburger">&#9776;</a>
     </div>
+  </div>
+
+  <main>
+    <header>
+      <img src="icons/avatar-original.jpg" id="avatar" alt="avatar">
+      <h1>Lakhindar Pal</h1>
+      <p id="tagline-text"></p>
+    </header>
 
     <section id="about">
-      <h3>What defines me</h3>
+      <h2>About Me</h2>
+      <p>Greetings! I'm a dedicated and detail-oriented Full Stack Web Developer from India with a unique background. Despite completing my B.Sc. in Physics, my passion for coding led me to master a diverse set of technologies, including HTML5, CSS3, JavaScript, React, NodeJS, MongoDB and more.</p>
+      <p>Beyond the realm of coding, I an anime enthusiast. Engaging narratives and vivid storytelling within the captivating anime universe serve as my wellspring of creativity and motivation.</p>
+      <p>Perpetually eager to learn and collaborate, I actively seek out intriguing projects where innovation and teamwork converge. Let's embark on a journey of constant growth and impactful collaboration.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
       <ul>
-        <li>I'm deeply enamored with the world of open source.</li>
-        <li>Embracing the shadows, I'm a fervent dark mode enthusiast.</li>
-        <li>Enjoys exploring music in different languages even if I don't understand the language.</li>
-        <li>Always eager to learn and collaborate on interesting projects.</li>
-        <li>Enjoys watching movies from various genres to relax and unwind.</li>
-        <li>From epic adventures to stirring tales of anime is my go-to source for creativity and inspiration.</li>
+        <li class="edu">
+          <h3>Bachelor of Science in Physics</h3>
+          <p>Ramananda College, WB, India</p>
+          <p><strong>Graduation:</strong> 2023</p>
+        </li>
       </ul>
     </section>
-    <hr>
-    <!-- Skills section -->
-    <section id="backpack">
-      <h3>What's in my backpack</h3>
+
+    <section id="skills">
+      <h2>Skills</h2>
       <div class="container">
+
         <div class="category">
-          <h4>Programing languages</h4>
-          <div class="logo-list">
-            <img src="logos/html5-original.svg" alt="HTML5">
-            <img src="logos/css3-original.svg" alt="CSS3">
-            <img src="logos/javascript-original.svg" alt="JavaScript">
-            <img src="logos/typescript-original.svg" alt="TypeScript">
-            <img src="logos/python-original.svg" alt="Python">
-            <img src="logos/c-original.svg" alt="C-Lang">
-            <img src="logos/kotlin-original.svg" alt="Kotlin">
+          <h4>Languages</h4>
+          <div class="skill-set">
+            <img src="logos/javascript.svg" alt="JavaScript">
+            <img src="logos/typescript.svg" alt="TypeScript">
+            <img src="logos/c.svg" alt="C Lang">
           </div>
         </div>
+
         <div class="category">
-          <h4>Code editors</h4>
-          <div class="logo-list">
-            <img src="logos/vscode-original.svg" alt="VS Code">
+          <h4>Front-end</h4>
+          <div class="skill-set">
+            <img src="logos/html5.svg" alt="HTML5">
+            <img src="logos/css3.svg" alt="CSS3">
+            <img src="logos/react.svg" alt="React">
+            <img src="logos/bootstrap.svg" alt="Bootstrap">
+            <img src="logos/tailwindcss.svg" alt="Tailwind CSS">
           </div>
         </div>
+
         <div class="category">
-          <h4>Front-end framework</h4>
-          <div class="logo-list">
-            <img src="logos/react-original.svg" alt="React">
-            <img src="logos/nextjs-original.svg" alt="Next.js">
-            <img src="logos/bootstrap-original.svg" alt="Bootstrap">
-            <img src="logos/tailwindcss-plain.svg" alt="Tailwind CSS">
+          <h4>Back-end</h4>
+          <div class="skill-set">
+            <img src="logos/nodejs.svg" alt="Node JS">
+            <img src="logos/express.svg" alt="ExpressJS">
+            <img src="logos/discordjs.svg" alt="Discord.js">
+            <img src="logos/npmjs.svg" alt="NPM">
           </div>
         </div>
-        <div class="category">
-          <h4>Back-end framework</h4>
-          <div class="logo-list">
-            <img src="logos/nodejs-original.svg" alt="Node.js">
-            <img src="logos/npm-original-wordmark.svg" alt="NPM">
-            <img src="logos/express-original.svg" alt="Express.js">
-            <img src="logos/discordjs-original.svg" alt="Discord.js">
-          </div>
-        </div>
+
         <div class="category">
           <h4>Database</h4>
-          <div class="logo-list">
-            <img src="logos/mongodb-original.svg" alt="MongoDB">
-            <img src="logos/mysql-original.svg" alt="MySQL">
+          <div class="skill-set">
+            <img src="logos/mongodb.svg" alt="MongoDB">
+            <img src="logos/mysql.svg" alt="MySQL">
           </div>
         </div>
+
         <div class="category">
-          <h4>Version control</h4>
-          <div class="logo-list">
-            <img src="logos/git-original.svg" alt="Git">
-            <img src="logos/github-original.svg" alt="GitHub">
-            <img src="logos/gitlab-original.svg" alt="GitLab">
-            <img src="logos/bitbucket-original.svg" alt="Bitbucket">
-            <img src="/logos/Glitch_company.svg" alt="Glitch">
-            <img src="logos/New_Replit_Logo.svg" alt="Replit">
+          <h4>Tools</h4>
+          <div class="skill-set">
+            <img src="logos/git.svg" alt="Git">
+            <img src="logos/github.svg" alt="GitHub">
+            <img src="logos/vscode.svg" alt="VS Code">
           </div>
         </div>
+
         <div class="category">
-          <h4>Hosting services</h4>
-          <div class="logo-list">
-            <img src="logos/heroku-original.svg" alt="Heroku">
-            <img src="logos/railway-logo-dark.svg" alt="Railway">
-            <img src="logos/vercel-icon-dark.png" alt="Vercel">
-            <img src="logos/netlify-svgrepo-com.svg" alt="Netlify">
+          <h4>Hosting</h4>
+          <div class="skill-set">
+            <img src="logos/heroku.svg" alt="Heroku">
+            <img src="logos/railway.svg" alt="Railway">
+            <img src="logos/vercel.png" alt="Vercel">
+            <img src="logos/netlify.svg" alt="Netlify">
           </div>
         </div>
+
         <div class="category">
-          <h4>Operating systems</h4>
-          <div class="logo-list">
-            <img src="logos/windows8-original.svg" alt="Windows">
-            <img src="logos/linux-original.svg" alt="Linux">
-            <img src="logos/android-original.svg" alt="Android">
+          <h4>Playgrounds</h4>
+          <div class="skill-set">
+            <img src="logos/codepen.svg" alt="CodePen">
+            <img src="logos/jsfiddle.svg" alt="JSFiddle">
+            <img src="/logos/glitch.svg" alt="Glitch">
+            <img src="logos/replit.svg" alt="Replit">
           </div>
         </div>
+
         <div class="category">
-          <h4>Web browsers</h4>
-          <div class="logo-list"> <img src="logos/Edge_2019.svg" alt="Edge">
-            <img src="logos/firefox-original.svg" alt="Firefox">
-            <img src="logos/chrome-original.svg" alt="Chrome">
-            </a>
+          <h4>Soft Skills</h4>
+          <div class="skill-set soft-skills">
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Problem-solving</li>
           </div>
         </div>
-        <div class="category">
-          <h4>Query Resolvers</h4>
-          <div class="logo-list">
-            <img src="logos/google-original.svg" alt="Google">
-            <img src="logos/ChatGPT.svg" alt="ChatGPT">
-            <img src="/logos/YouTube_2017.svg" alt="YouTube">
-            <img src="/logos/Stack_Overflow_icon.svg" alt="Stack Overflow">
-          </div>
-        </div>
+
+      </div>
+      </div>
     </section>
-    <hr>
-    <!-- Connect Section -->
-    <section id="connect">
-      <h3>Connect with me</h3>
-      <div class="container">
-        <div class="category">
-          <h4>Social media</h4>
-          <div class="logo-list">
-            <a href="https://facebook.com/" target="_blank" title="Facebook"><img src="/logos/Facebook_2021.svg" alt="Facebook"></a>
-            <a href="https://Instagram.com/" target="_blank" title="Instagram"><img src="logos/Instagram_2016.svg" alt="Instagram"></a>
-            <a href="https://twitter.com/" target="_blank" title="Twitter"><img src="logos/Twitter.svg" alt="Twitter"></a>
-            <a href="https://reddit.com/user/lakhindarpal" target="_blank" title="Reddit"><img src="logos/Reddit_Logo_Icon.svg" alt="Reddit"></a>
-            <a href="https://hachyderm.io/@lakhindarpal" target="_blank" title="Mastodon"><img src="/logos/Mastodon_logotype_(simple)_new_hue.svg" alt="Mastodon"></a>
-          </div>
-        </div>
-        <div class="category">
-          <h4>Professional</h4>
-          <div class="logo-list">
-            <a href="https://linkedin.com/in/lakhindarpal" target="_blank" title="LinkedIn"><img src="logos/LinkedIn_icon.svg" alt="LinkedIn"></a>
-            <a href="mailto:dev.lakhindarpal+portfolio@gmail.com" target="_blank" title="E-mail"><img src="logos/Circle-icons-email.svg" alt="E-mail"></a>
-          </div>
-        </div>
-        <div class="category">
-          <h4>Streaming</h4>
-          <div class="logo-list">
-            <a href="https://discord.com/" target="_blank" title="Discord"><img src="/logos/discord_blurple_RGB.svg" alt="Discord"></a>
-            <a href="https://www.twitch.tv/lakhindarpal" target="_blank" title="Twitch"><img src="logos/twitch_purple.svg" alt="Twitch"></a>
-            <a href="https://youtube.com/" target="_blank" title="YouTube"><img height="25" src="/logos/YouTube_2017.svg" alt="YouTube"></a>
-          </div>
-        </div>
-        <div class="category">
-          <h4>Blogging</h4>
-          <div class="logo-list">
-            <a href="https://lakhindarpal.hashnode.dev/" target="_blank" title="Hashnode"><img src="logos/hashnode.png" alt="Hashnode"></a>
-            <a href="https://lakhindarpal.substack.com/" target="_blank" title="Substack"><img src="/logos/substack.png" alt="Substack"></a>
-            <a href="https://lakhindarpal.medium.com" target="_blank" title="Medium"><img src="/logos/Medium-Symbol-Black-RGB.svg" alt="Medium"></a>
-            <a href="https://dev.to/lakhindarpal" target="_blank" title="Dev"><img src="/logos/dev-badge.svg" alt="Dev"></a>
-          </div>
-        </div>
-        <div class="category">
-          <h4>Coding environment</h4>
-          <div class="logo-list">
-            <a href="https://github.com/lakhindarpal" target="_blank" title="GitHub"><img src="logos/github-original.svg" alt="Github"></a>
-            <a href="https://glitch.com/@lakhindarpal" target="_blank" title="Glitch"><img src="/logos/Glitch_company.svg" alt="Glitch"></a>
-            <a href="https://gitlab.com/lakhindarpal" target="_blank" title="GitLab"><img src="logos/gitlab-original.svg" alt="Gitlab"></a>
-            <a href="https://replit.com/@lakhindarpal" target="_blank" title="Replit"><img src="logos/New_Replit_Logo.svg" alt="Replit"></a>
-          </div>
-        </div>
-        <div class="category">
-          <h4>Crowdfunding</h4>
-          <div class="logo-list">
-            <a href="https://ko-fi.com/lakhindarpal" target="_blank" title="Ko-fi"><img src="logos/ko-fi.png" alt="Ko-fi"></a>
-            <a href="https://patreon.com/lakhindarpal" target="_blank" title="Patreon"><img src="logos/Patreon_logo.svg" alt="Patreon"></a>
-            <a href="https://www.buymeacoffee.com/lakhindarpal" target="_blank" title="BuyMeACoffee"><img src="/logos/buy_me_a_coffee.svg" alt="BuyMeACoffe"></a>
-          </div>
-        </div>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <ul>
+        <li class="exp">
+          <h3>Open source contributor</h3>
+          <p>In the absence of a traditional computer science degree, my self-taught journey into web development has proven to be both rich and rewarding.</p>
+          <p>While lacking formal professional experience, my commitment to the field shines through my active contributions to open source projects.</p>
+          <p><strong>Duration:</strong> 2021 - Present</p>
+        </li>
+      </ul>
     </section>
-    <hr>
-    <section id="message">
-      <h3>Send me a message</h3>
+
+    <section id="achievements">
+      <h2>Accomplishments</h2>
+      <ol>
+        <li class="achv">
+          <h3>Hacktoberfest 2021 Triumph:</h3>
+          <p>Recognized for outstanding contributions during Hacktoberfest 2021, showcasing my commitment to collaborative development within the open source community.</p>
+          <p><strong>Date:</strong> October 2021</p>
+        </li>
+
+        <li class="achv">
+          <h3>Pioneering Self-Taught Path:</h3>
+          <p>Mastery in web development attained through a self-driven learning odyssey, reflecting resilience and passion for diverse technological skills.</p>
+          <p><strong>Date:</strong> on-going</p>
+        </li>
+
+      </ol>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <img src="https://dummyimage.com/300x200" alt="Almighty bot">
+        <h3>Almighty - Discord Multipurpose Bot</h3>
+        <p>Almighty transcends the role of a typical Discord bot; it stands as a versatile tool meticulously to elevate server experience. It stands as a testament to my unwavering commitment to innovation in crafting dynamic and impactful digital solutions.</p>
+        <p><strong>Technologies:</strong> Node.js, Discord.js, MongoDB, Express, EJS</p>
+        <a href="https://github.com/LakhindarPal/Almighty" target="_blank">Source Code</a>
+        <a href="https://discord.ly/almighty" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project">
+        <img src="https://dummyimage.com/300x200" alt="Portfolio website">
+        <h3>Portfolio Website</h3>
+        <p>My portfolio website seamlessly blends aesthetics and functionality. It showcases not just my skills but a testament to my commitment to creating visually appealing and interactive web experiences. Dive into a journey of innovation and proficiency as you explore my digital haven.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://github.com/LakhindarPal/LakhindarPal.github.io" target="_blank">Source Code</a>
+        <a href="https://lakhindar.is-a.dev" target="_blank">Live Demo</a>
+      </div>
+
+      <div class="project">
+        <img src="https://dummyimage.com/300x200" alt="MyAniJot app">
+        <h3>MyAniJot - Anime Listing Web App</h3>
+        <p>MyAniJot empowers users to effortlessly track watched and planned anime. Demonstrating proficiency in crafting user-friendly interfaces and dynamic functionality, it embodies my commitment to creating seamless and engaging digital experiences.</p>
+        <p><strong>Technologies:</strong> MERN Stack (MongoDB, Express, React, Node.js)</p>
+        <a href="https://github.com/LakhindarPal/MyAniJot" target="_blank">Source Code</a>
+        <a href="https://myanijot.verceel.app" target="_blank">Live Demo</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out if you have any inquiries or opportunities.</p>
+
       <form action="https://api.web3forms.com/submit" method="POST" id="web3form">
         <input type="hidden" name="access_key" value="14ac1ded-55db-42d2-acf6-f48b5a1593f9" />
+
         <input type="hidden" name="from_name" value="New submission from portfolio site" />
         <input type="hidden" name="redirect" value="https://lakhindar.is-a.dev/success.html" />
         <input type="checkbox" name="botcheck" id="" style="display: none;" />
-        <div>
-          <label for="name">Full Name</label>
-          <input type="text" name="name" id="name" placeholder="John Doe" required />
-        </div>
-        <div>
-          <label for="email">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="you@company.com" required />
-        </div>
-        <div>
-          <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject" placeholder="Message subject here" required />
-        </div>
-        <div>
-          <label for="message">Your Message</label>
-          <textarea rows="5" name="message" id="message" placeholder="Type your message here...." required></textarea>
-        </div>
-        <div>
-          <button type="submit" id="send-btn">
-            Send
-          </button>
-        </div>
+
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="John Doe" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="your.email@example.com" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" placeholder="Message subject here" required />
+
+        <label for="message">Your Message</label>
+        <textarea rows="5" name="message" id="message" placeholder="Type your message here....." required></textarea>
+
+        <button type="submit" id="send-btn">
+          Send
+        </button>
+
         <p id="result"></p>
       </form>
     </section>
+
   </main>
-  <hr>
+
   <footer>
-    <p>&copy; 2023 Lakhindar. All rights reserved.</p>
+    <p>&copy; 2024 Lakhindar. All rights reserved.</p>
+    <div id="social">
+      <a href="https://www.linkedin.com/in/LakhindarPal" target="_blank"><img src="logos/linkedin.svg" alt="LinkedIn"></a>
+      <a href="mailto:dev.lakhindarpal@gmail.com"><img src="logos/email.svg" alt="Email"></a>
+      <a href="https://github.com/LakhindarPal" target="_blank"><img src="logos/github.svg" alt="GitHub"></a>
+      <a href="https://dev.to/LakhindarPal" target="_blank"><img src="logos/devto.svg" alt="Dev.to"></a>
+      <a href="https://discord.gg/" target="_blank"><img src="logos/discord.svg" alt="Discord"></a>
+      <a href="https://www.buymeacoffee.com/LakhindarPal" target="_blank"><img src="logos/buy-me-a-coffee.svg" alt=""></a>
+    </div>
   </footer>
 
 </body>
