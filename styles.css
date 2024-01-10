@@ -22,7 +22,7 @@ html[data-theme="dark"] {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 3em;
+  scroll-padding-top: 4em;
 }
 
 body {
@@ -281,7 +281,7 @@ textarea {
   color: var(--color-distinct);
 }
 
-#navbar #hamburger{
+#navbar #hamburger {
   display: none;
   float: right;
   cursor: pointer;
